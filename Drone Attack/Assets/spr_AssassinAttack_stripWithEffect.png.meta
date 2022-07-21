@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,11 +43,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -78,9 +78,495 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: player_teleport1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 26
+        width: 22
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fd34cad7543994eaa3effb5b618897
+      internalID: -2052772265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 26
+        width: 28
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7416e74226bfcd4b9f5751e029334a3
+      internalID: 1416493577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 26
+        width: 38
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38e8fa686acd5d44bcc7a8fe76f5c65
+      internalID: 1175812644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport4
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 26
+        width: 38
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb93e70d6d267f240828c69cfaa21951
+      internalID: -1662220542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport5
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 26
+        width: 40
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5485760e80bac4597eaece9bd92b35
+      internalID: -1958728602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport6
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 26
+        width: 47
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4c20c3ec6f4d544b85171557c9d9ef
+      internalID: -2035634145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport7
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 26
+        width: 76
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0ed46b19d643349bb2863cea022ebe
+      internalID: 376896513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport8
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 20
+        width: 75
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804c59897d6a3054baebc7fa6f224b78
+      internalID: 728420686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_8
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 36
+        width: 32
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6f1bd3e2e0c85439eba22348243a7f
+      internalID: -1215746356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport9
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 26
+        width: 78
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a6a576db8992646b01c36ed04ebe6b
+      internalID: 1148310114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_10
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 39
+        width: 10
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcce24717ba44dc47b78af6e6d52d451
+      internalID: 363815201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_11
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 36
+        width: 40
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468c46359cfe2944d97b68d2717229e5
+      internalID: -743784509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport10
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 27
+        width: 116
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cb6c60959b71845841a168ca90af2e
+      internalID: -1264333988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_13
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 36
+        width: 32
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9084f92277a9648ba1b2fd07db4acb
+      internalID: 401266331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport11
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 26
+        width: 126
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a590252ff38d141929a04acea1940f
+      internalID: -974402926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_15
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 39
+        width: 32
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e4868d9f1aa364293723d7eeaf33e9
+      internalID: 935384100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_16
+      rect:
+        serializedVersion: 2
+        x: 2128
+        y: 37
+        width: 10
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc29f2f15071c1b4daf02d7fb7cd07ff
+      internalID: -2055366184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_teleport12
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 26
+        width: 87
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a8ecdb6741ea2469d312907631c0bf
+      internalID: 967751666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_18
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 42
+        width: 10
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b11eea796bda964dbbd8b38264d6a7d
+      internalID: -686201606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_19
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 26
+        width: 31
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73643b5d05748b4290fe606a3c45158
+      internalID: 864765207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_20
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 26
+        width: 24
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e197ee5273c8b4bb5144e011b2fc1b
+      internalID: -1994268172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_AssassinAttack_stripWithEffect_21
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 26
+        width: 21
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0724ba10669b5ba4ca0d759d6f513965
+      internalID: -1676949444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -91,7 +577,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      player_teleport5: -1958728602
+      player_teleport8: 728420686
+      player_teleport1: -2052772265
+      player_teleport3: 1175812644
+      player_teleport2: 1416493577
+      spr_AssassinAttack_stripWithEffect_15: 935384100
+      spr_AssassinAttack_stripWithEffect_20: -1994268172
+      spr_AssassinAttack_stripWithEffect_16: -2055366184
+      player_teleport7: 376896513
+      spr_AssassinAttack_stripWithEffect_21: -1676949444
+      spr_AssassinAttack_stripWithEffect_11: -743784509
+      player_teleport4: -1662220542
+      spr_AssassinAttack_stripWithEffect_13: 401266331
+      spr_AssassinAttack_stripWithEffect_10: 363815201
+      player_teleport6: -2035634145
+      player_teleport9: 1148310114
+      spr_AssassinAttack_stripWithEffect_19: 864765207
+      player_teleport11: -974402926
+      player_teleport12: 967751666
+      spr_AssassinAttack_stripWithEffect_8: -1215746356
+      spr_AssassinAttack_stripWithEffect_18: -686201606
+      player_teleport10: -1264333988
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

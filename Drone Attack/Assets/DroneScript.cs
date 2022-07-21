@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class DroneScript : MonoBehaviour
 {
-    private Animator m_animator;
-    private Rigidbody2D m_body2d;
+    public Animator m_animator;
+    public Rigidbody2D m_body2d;
 
     public float minSpeed = 5f;
     public float maxSpeed = 10f;
-
+    public LayerMask playerLayer;
     public float speed;
+
+    public AudioSource audioSource;
 
     private void Start()
     {
@@ -23,22 +26,40 @@ public class DroneScript : MonoBehaviour
     void FixedUpdate()
     {
         m_body2d.MovePosition(m_body2d.position + Vector2.down * Time.fixedDeltaTime * speed);
+
+        //RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
+
+        //if (hit.collider.CompareTag("Ground"))
+        //{
+        //    //Debug.Log("drone hit the ground");
+        //    m_animator.Play("drone_death");
+        //    m_body2d.constraints = RigidbodyConstraints2D.FreezeAll;
+        //    StartCoroutine(waiter());
+        //}
+
+        if (transform.position.y <= 2.35)
+        {
+            m_body2d.constraints = RigidbodyConstraints2D.FreezeAll;
+            StartCoroutine(waiter());
+        }
+
+
+        IEnumerator waiter()
+        {
+            //Debug.Log("Waiting!!!");
+            //audioSource.Play();
+            yield return new WaitForSeconds(0.25f);
+            GetComponent<Collider2D>().enabled = false; //disable hit box
+            m_animator.Play("drone_death");
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("Hit Detected.");
-        m_animator.Play("drone_death");
-        m_body2d.constraints = RigidbodyConstraints2D.FreezeAll;
+//    private void OnTriggerEnter2D(Collider2D playerLayer)
+//    {
+//        m_animator.Play("drone_death");
+//        m_body2d.constraints = RigidbodyConstraints2D.FreezeAll;
 
-        //disable the enemy
-        GetComponent<Collider2D>().enabled = false; //disable hit box
-    }
-
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    m_animator.Play("drone_death");
-    //    //Destroy(gameObject, 0.5f);
-    //}
+//        //disable the enemy
+//        GetComponent<Collider2D>().enabled = false; //disable hit box
+//    }
 }
