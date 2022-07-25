@@ -37,7 +37,7 @@ public class DroneScript : MonoBehaviour
         //    StartCoroutine(waiter());
         //}
 
-        if (transform.position.y <= 2.35)
+        if (transform.position.y <= 2.10)
         {
             m_body2d.constraints = RigidbodyConstraints2D.FreezeAll;
             StartCoroutine(waiter());
@@ -48,7 +48,7 @@ public class DroneScript : MonoBehaviour
         {
             //Debug.Log("Waiting!!!");
             //audioSource.Play();
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(1f);
             GetComponent<Collider2D>().enabled = false; //disable hit box
             m_animator.Play("drone_death");
         }
