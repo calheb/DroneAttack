@@ -621,7 +621,7 @@ RectTransform:
   m_GameObject: {fileID: 508033474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 148546883}
@@ -630,7 +630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 8, y: 69}
+  m_AnchoredPosition: {x: 37, y: 109}
   m_SizeDelta: {x: 246.53, y: 84.6575}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &508033476
@@ -956,7 +956,7 @@ RectTransform:
   m_GameObject: {fileID: 704597174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1279247959}
@@ -965,7 +965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 13, y: 170}
+  m_AnchoredPosition: {x: 42, y: 319}
   m_SizeDelta: {x: 461.38, y: 88.2549}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704597176
@@ -1253,7 +1253,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.005097389, y: -0.12878361}
+  m_Offset: {x: -0.005097389, y: -0.15306827}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1264,7 +1264,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5267284, y: 0.3029886}
+  m_Size: {x: 0.5267284, y: 0.25441927}
   m_EdgeRadius: 0
 --- !u!50 &1137749346 stripped
 Rigidbody2D:
@@ -1643,7 +1643,7 @@ GameObject:
   m_Layer: 6
   m_Name: DroneSpawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1811,7 +1811,7 @@ GameObject:
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1895,7 +1895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452176619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.636, y: 2.021, z: 0}
+  m_LocalPosition: {x: -9.64, y: 1.955, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2112,7 +2112,7 @@ RectTransform:
   m_GameObject: {fileID: 1461277122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1282795877}
@@ -2120,7 +2120,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -12, y: -64}
+  m_AnchoredPosition: {x: 25, y: -143}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1461277124
@@ -2383,7 +2383,7 @@ RectTransform:
   m_GameObject: {fileID: 1713994698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1691511996}
@@ -2392,7 +2392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 32}
+  m_AnchoredPosition: {x: 39, y: 51}
   m_SizeDelta: {x: 461.3796, y: 135.9547}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1713994700
@@ -3076,6 +3076,14 @@ PrefabInstance:
     - target: {fileID: 8821227440667863014, guid: a0244b68b16070341bb8a63575d407f1, type: 3}
       propertyPath: m_Name
       value: Drone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821227440667863015, guid: a0244b68b16070341bb8a63575d407f1, type: 3}
+      propertyPath: maxSpeed
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821227440667863015, guid: a0244b68b16070341bb8a63575d407f1, type: 3}
+      propertyPath: minSpeed
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8821227440667863015, guid: a0244b68b16070341bb8a63575d407f1, type: 3}
       propertyPath: audioSource
