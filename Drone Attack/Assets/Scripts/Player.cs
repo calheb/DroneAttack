@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] float m_speed = 4.0f;
     [SerializeField] float m_jumpForce = 7.5f;
 
-
+    public GameObject deathMenuUI;
     public LayerMask enemyLayer;
     private Animator player_Animator;
     public Rigidbody2D player_RB2D;
@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
     public Rigidbody2D droneRB2D;
     public Collider2D droneCollider;
     public AudioSource audioSource;
+    public bool isDead = false;
+    public Collider2D playerCollider;
+
+
 
     // Use this for initialization
     void Start()
@@ -35,7 +39,6 @@ public class Player : MonoBehaviour
     {
         if (col.collider.tag == "Enemy")
         {
-            
             Debug.Log("WE LOST");
             player_RB2D.constraints = RigidbodyConstraints2D.FreezeAll;
             droneRB2D.constraints = RigidbodyConstraints2D.FreezeAll;
@@ -117,10 +120,12 @@ public class Player : MonoBehaviour
         //Debug.Log("Waiting!!!");
         yield return new WaitForSeconds(0.50f);
         droneCollider.enabled = false; //disable hit box
+        playerCollider.enabled = false;
         if ((player_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1) && DroneAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
             Debug.Log("not playing");
         else
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            deathMenuUI.SetActive(true);
 
     }
 

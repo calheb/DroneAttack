@@ -14,6 +14,16 @@ public class DroneSpawner : MonoBehaviour
 
     public Transform[] spawnPoints;
 
+
+    //void Start() => StartCoroutine(MyIEnumerator());         <----- in progress. trying to make game wait a few seconds before spawning drones
+
+    //IEnumerator MyIEnumerator()
+    //{
+    //    Debug.Log("Game waiting to start...");
+    //    yield return new WaitForSeconds(5);
+    //    Update();
+    //}
+
     private void Update()
     {
         {

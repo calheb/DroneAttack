@@ -3,38 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class DeathMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    public GameObject pauseMenuUI;
     public GameObject deathMenuUI;
+
+    public Player isDead;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && deathMenuUI.activeSelf == false)
+        if (Input.GetKeyDown(KeyCode.Space) && deathMenuUI.activeSelf)
         {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
+            PlayAgain();
         }
-    }
-
-    public void Resume()
-    {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
-        GameIsPaused = false;
     }
 
     void Pause()
     {
-        pauseMenuUI.SetActive(true);
+        deathMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
@@ -49,6 +36,11 @@ public class PauseMenu : MonoBehaviour
     {
         Debug.Log("Quitting game...");
         Application.Quit();
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene("Main");
     }
 
 
