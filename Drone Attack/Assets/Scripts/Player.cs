@@ -12,11 +12,11 @@ public class Player : MonoBehaviour
 
 
     public LayerMask enemyLayer;
-    private Animator m_animator;
-    public Rigidbody2D m_body2d;
-    private GroundChecker m_groundSensor;
-    private bool m_grounded = false;
-    private bool m_combatIdle = false;
+    private Animator player_Animator;
+    public Rigidbody2D player_RB2D;
+    private GroundChecker groundSensor;
+    private bool isGrounded = false;
+    private bool playerIdle = false;
     public Animator DroneAnimator;
     public Rigidbody2D droneRB2D;
     public Collider2D droneCollider;
@@ -25,10 +25,10 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        m_animator = GetComponent<Animator>();
-        m_body2d = GetComponent<Rigidbody2D>();
+        player_Animator = GetComponent<Animator>();
+        player_RB2D = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
-        m_groundSensor = transform.Find("GroundSensor").GetComponent<GroundChecker>();
+        groundSensor = transform.Find("GroundSensor").GetComponent<GroundChecker>();
     }
 
     private void OnCollisionStay2D(Collision2D col)
@@ -37,11 +37,11 @@ public class Player : MonoBehaviour
         {
             
             Debug.Log("WE LOST");
-            m_body2d.constraints = RigidbodyConstraints2D.FreezeAll;
+            player_RB2D.constraints = RigidbodyConstraints2D.FreezeAll;
             droneRB2D.constraints = RigidbodyConstraints2D.FreezeAll;
-            m_animator.SetBool("isDead", true);
-            m_animator.SetInteger("AnimState", 4);
-            m_animator.Play("player_death");
+            player_Animator.SetBool("isDead", true);
+            player_Animator.SetInteger("AnimState", 4);
+            player_Animator.Play("player_death");
             DroneAnimator.Play("drone_death");
             audioSource.Play();
             StartCoroutine(waiter());
@@ -50,17 +50,17 @@ public class Player : MonoBehaviour
     void Update()
     {
         //Check if character just landed on the ground
-        if (!m_grounded && m_groundSensor.State())
+        if (!isGrounded && groundSensor.State())
         {
-            m_grounded = true;
-            m_animator.SetBool("Grounded", m_grounded);
+            isGrounded = true;
+            player_Animator.SetBool("Grounded", isGrounded);
         }
 
         //Check if character just started falling
-        if (m_grounded && !m_groundSensor.State())
+        if (isGrounded && !groundSensor.State())
         {
-            m_grounded = false;
-            m_animator.SetBool("Grounded", m_grounded);
+            isGrounded = false;
+            player_Animator.SetBool("Grounded", isGrounded);
         }
 
         // -- Handle input and movement --
@@ -73,41 +73,41 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
         // Move
-        m_body2d.velocity = new Vector2(inputX * m_speed, m_body2d.velocity.y);
+        player_RB2D.velocity = new Vector2(inputX * m_speed, player_RB2D.velocity.y);
 
         //Set AirSpeed in animator
-        m_animator.SetFloat("AirSpeed", m_body2d.velocity.y);
+        player_Animator.SetFloat("AirSpeed", player_RB2D.velocity.y);
 
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            m_animator.SetInteger("AnimState", 5);
-            m_animator.SetBool("teleporting", true);
+            player_Animator.SetInteger("AnimState", 5);
+            player_Animator.SetBool("teleporting", true);
         }
 
         //Jump
-        if (Input.GetKeyDown("space") && m_grounded)
+        if (Input.GetKeyDown("space") && isGrounded)
         {
-            m_animator.SetInteger("AnimState", 3);
-            m_grounded = false;
-            m_animator.SetBool("Grounded", m_grounded);
-            m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
-            m_groundSensor.Disable(0.2f);
+            player_Animator.SetInteger("AnimState", 3);
+            isGrounded = false;
+            player_Animator.SetBool("Grounded", isGrounded);
+            player_RB2D.velocity = new Vector2(player_RB2D.velocity.x, m_jumpForce);
+            groundSensor.Disable(0.2f);
         }
 
         //Run
         else if (Mathf.Abs(inputX) > Mathf.Epsilon)
-            m_animator.SetInteger("AnimState", 2);
+            player_Animator.SetInteger("AnimState", 2);
 
-        //Combat Idle
-        else if (m_combatIdle)
-            m_animator.SetInteger("AnimState", 1);
+
+        else if (playerIdle)
+            player_Animator.SetInteger("AnimState", 1);
 
         //Idle
         else if (Mathf.Abs(inputX) <= Mathf.Epsilon)
-            m_animator.SetInteger("AnimState", 0);
+            player_Animator.SetInteger("AnimState", 0);
 
-        if (m_body2d.position.y < -10)
+        if (player_RB2D.position.y < -10)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -115,9 +115,9 @@ public class Player : MonoBehaviour
     IEnumerator waiter()
     {
         //Debug.Log("Waiting!!!");
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.50f);
         droneCollider.enabled = false; //disable hit box
-        if ((m_animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1) && DroneAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+        if ((player_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1) && DroneAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
             Debug.Log("not playing");
         else
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);

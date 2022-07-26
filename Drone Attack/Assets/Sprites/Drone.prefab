@@ -159,9 +159,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_animator: {fileID: 8821227440667863010}
   m_body2d: {fileID: 8821227440667863008}
-  minSpeed: 1
-  maxSpeed: 4
+  minSpeed: 3
+  maxSpeed: 6
   playerLayer:
     serializedVersion: 2
     m_Bits: 136
   speed: 0
+  audioSource: {fileID: 0}

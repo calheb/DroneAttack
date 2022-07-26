@@ -36,7 +36,6 @@ public class DroneSpawner : MonoBehaviour
 
     public void DestroyGameObject()
     {
-        //Debug.Log("clone destroyed!!");
         Destroy(clone, 3);
     }
 
