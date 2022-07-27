@@ -25,7 +25,7 @@ public class DroneScript : MonoBehaviour
     {
         m_body2d.MovePosition(m_body2d.position + Vector2.down * Time.fixedDeltaTime * speed);
 
-        if (m_body2d.position.y <= 2.10)
+        if (m_body2d.position.y <= 1.95)
         {
             m_body2d.constraints = RigidbodyConstraints2D.FreezeAll;
             StartCoroutine(waiter());

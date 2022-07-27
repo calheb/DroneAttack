@@ -33,7 +33,7 @@ public class GemScript : MonoBehaviour
     {
         gem_rb2d.MovePosition(gem_rb2d.position + Vector2.down * Time.fixedDeltaTime * gemSpeed);
 
-        if (gem_rb2d.position.y <= 2.10)
+        if (gem_rb2d.position.y <= 1.95)
         {
             gem_rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
             StartCoroutine(waiter());

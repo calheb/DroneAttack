@@ -112,6 +112,7 @@ public class HeartSystem : MonoBehaviour
         droneCollider.enabled = false; //disable  drone collider
         playerCollider.enabled = false; //disable player collider
         deathMenuUI.SetActive(true); //bring up the death menu screen
+        Scoring.CurrentScore = 0;
     }
 
     IEnumerator RespawnWaiter()

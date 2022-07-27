@@ -30,7 +30,7 @@ public class HeartScript : MonoBehaviour
     {
         heartRB2D.MovePosition(heartRB2D.position + Vector2.down * Time.fixedDeltaTime * heartSpeed);
 
-        if (heartRB2D.position.y <= 2.10)
+        if (heartRB2D.position.y <= 1.95)
         {
             heartRB2D.constraints = RigidbodyConstraints2D.FreezeAll;
             StartCoroutine(waiter());
