@@ -19,6 +19,8 @@ public class DashScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animator.SetInteger("AnimState", 5);
+        animator.Play("player_teleport");
     }
 
     void Update()

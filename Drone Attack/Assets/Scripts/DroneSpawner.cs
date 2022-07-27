@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DroneSpawner : MonoBehaviour
 {
-    public float spawnDelay = 0.3f;
+    public float spawnDelay = 1f;
 
     float nextTimeToSpawn = 0f;
 
@@ -15,25 +15,14 @@ public class DroneSpawner : MonoBehaviour
     public Transform[] spawnPoints;
 
 
-    //void Start() => StartCoroutine(MyIEnumerator());         <----- in progress. trying to make game wait a few seconds before spawning drones
-
-    //IEnumerator MyIEnumerator()
-    //{
-    //    Debug.Log("Game waiting to start...");
-    //    yield return new WaitForSeconds(5);
-    //    Update();
-    //}
-
     private void Update()
     {
+        if (nextTimeToSpawn <= Time.time)
         {
-            if (nextTimeToSpawn <= Time.time)
-            {
-                SpawnDrone();
-                nextTimeToSpawn = Time.time + spawnDelay;
-
-                DestroyGameObject();
-            }
+            SpawnDrone();
+            nextTimeToSpawn = Time.time + spawnDelay;
+            DestroyGameObject();
+            SpawnTimerIncrease();
         }
     }
 
@@ -44,9 +33,22 @@ public class DroneSpawner : MonoBehaviour
         clone = Instantiate(drone, spawnPoint.position, spawnPoint.rotation);
     }
 
+    public void SpawnTimerIncrease()
+    {
+        if (spawnDelay > 0.3f)
+        {
+            spawnDelay -= 0.005f;
+        }
+        else
+        {
+            spawnDelay = 0.3f;
+        }
+    }
+
     public void DestroyGameObject()
     {
         Destroy(clone, 3);
+
     }
 
 

@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Ground
   - background
+  - Gem
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Ground
   - background
   - score
-  - 
+  - gem
   - 
   - 
   - 
@@ -55,4 +56,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 523548061
+    locked: 0
+  - name: Gem
+    uniqueID: 2255785705
     locked: 0

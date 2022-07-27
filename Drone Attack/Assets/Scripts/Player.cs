@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -24,7 +26,14 @@ public class Player : MonoBehaviour
     public bool isDead = false;
     public Collider2D playerCollider;
 
+    
+    [SerializeField]
+    TextMeshProUGUI scoreText;
 
+    public AudioSource gemAudio;
+    public Collider2D gemCollider;
+    public Rigidbody2D gemRB2D;
+    public GameObject gemClone;
 
     // Use this for initialization
     void Start()
@@ -33,6 +42,7 @@ public class Player : MonoBehaviour
         player_RB2D = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         groundSensor = transform.Find("GroundSensor").GetComponent<GroundChecker>();
+        scoreText.text = "Score: " + Scoring.CurrentScore;
     }
 
     private void OnCollisionStay2D(Collision2D col)
@@ -40,6 +50,7 @@ public class Player : MonoBehaviour
         if (col.collider.tag == "Enemy")
         {
             Debug.Log("WE LOST");
+            Scoring.CurrentScore = 0;
             player_RB2D.constraints = RigidbodyConstraints2D.FreezeAll;
             droneRB2D.constraints = RigidbodyConstraints2D.FreezeAll;
             player_Animator.SetBool("isDead", true);
@@ -48,6 +59,28 @@ public class Player : MonoBehaviour
             DroneAnimator.Play("drone_death");
             audioSource.Play();
             StartCoroutine(waiter());
+        }
+
+        //else if (col.collider.tag == "Gem")
+        //{
+        //    gemAudio.Play();
+        //    Scoring.CurrentScore += 1;
+        //    scoreText.text = "Score: " + Scoring.CurrentScore;
+        //    gemCollider.enabled = false;
+        //    gemClone.SetActive(false);
+        //    gemClone.GetComponent<Renderer>().enabled = false;
+        //}
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Gem"))
+        {
+            Destroy(collision.gameObject);
+            gemAudio.Play();
+            Scoring.CurrentScore += 1;
+            scoreText.text = "Score: " + Scoring.CurrentScore;
+
         }
     }
     void Update()
@@ -110,9 +143,9 @@ public class Player : MonoBehaviour
         else if (Mathf.Abs(inputX) <= Mathf.Epsilon)
             player_Animator.SetInteger("AnimState", 0);
 
-        if (player_RB2D.position.y < -10)
+        if (player_RB2D.position.y < -1.5 || player_RB2D.position.y > 5)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            deathMenuUI.SetActive(true);
         }
     }
     IEnumerator waiter()
