@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - background
   - Gem
+  - Heart
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - background
   - score
   - gem
-  - 
+  - heart
   - 
   - 
   - 
@@ -59,4 +60,10 @@ TagManager:
     locked: 0
   - name: Gem
     uniqueID: 2255785705
+    locked: 0
+  - name: Heart
+    uniqueID: 777780149
+    locked: 0
+  - name: UI
+    uniqueID: 2630015981
     locked: 0
