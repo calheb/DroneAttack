@@ -1665,6 +1665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 0.75
+  nextTimeToSpawn: 0
   gem: {fileID: 1004814553}
   gemClone: {fileID: 0}
   gemSpawnPoints:
@@ -4907,11 +4908,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4558530678759151126, guid: 8787f3521635b7f4baa75008f18519d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.063
+      value: -2.97
       objectReference: {fileID: 0}
     - target: {fileID: 4558530678759151126, guid: 8787f3521635b7f4baa75008f18519d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.819
+      value: 4.806
       objectReference: {fileID: 0}
     - target: {fileID: 4558530678759151126, guid: 8787f3521635b7f4baa75008f18519d8, type: 3}
       propertyPath: m_LocalPosition.z
