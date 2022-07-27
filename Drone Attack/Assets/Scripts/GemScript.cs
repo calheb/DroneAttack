@@ -8,8 +8,8 @@ using TMPro;
 
 public class GemScript : MonoBehaviour
 {
-    public Animator gem_animator;
-    public Rigidbody2D gem_rb2d;
+
+    [SerializeField] TextMeshProUGUI scoreText;
 
     public float gemMinSpeed = 2f;
     public float gemMaxSpeed = 4f;
@@ -19,10 +19,8 @@ public class GemScript : MonoBehaviour
     public Collider2D gemCollider;
     public Rigidbody2D gemRB2D;
     public GameObject gemClone;
-
-    [SerializeField]
-    TextMeshProUGUI scoreText;
-
+    public Animator gem_animator;
+    public Rigidbody2D gem_rb2d;
 
     private void Start()
     {
@@ -30,6 +28,7 @@ public class GemScript : MonoBehaviour
         gem_rb2d = GetComponent<Rigidbody2D>();
         gemSpeed = Random.Range(gemMinSpeed, gemMaxSpeed);
     }
+
     void FixedUpdate()
     {
         gem_rb2d.MovePosition(gem_rb2d.position + Vector2.down * Time.fixedDeltaTime * gemSpeed);
@@ -40,25 +39,10 @@ public class GemScript : MonoBehaviour
             StartCoroutine(waiter());
         }
 
-
         IEnumerator waiter()
         {
             yield return new WaitForSeconds(0.5f);
             gem_rb2d.constraints = RigidbodyConstraints2D.None;
-            //GetComponent<Collider2D>().enabled = false; //disable hit box
         }
     }
-
-    //private void OnCollisionStay2D(Collision2D col)
-    //{
-    //    if (col.collider.tag == "Player")
-    //    {
-    //        gemAudio.Play();
-    //        Scoring.CurrentScore += 1;
-    //        scoreText.text = "Score: " + Scoring.CurrentScore;
-    //        gemCollider.enabled = false;
-    //        //Destroy(gemClone);
-    //    }
-    //}
-
 }

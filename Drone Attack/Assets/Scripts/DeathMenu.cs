@@ -5,43 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
-    public static bool GameIsPaused = false;
-    public GameObject deathMenuUI;
+    public GameObject deathMenuUI; //death menu
 
-    public Player isDead;
-
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && deathMenuUI.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Space) && deathMenuUI.activeSelf) // Allows player to quickly play again by hitting space bar on the death menu
         {
             PlayAgain();
         }
     }
 
-    void Pause()
+    void Pause() // brings up the death menu 
     {
-        deathMenuUI.SetActive(true);
+        deathMenuUI.SetActive(true); 
         Time.timeScale = 0f;
-        GameIsPaused = true;
     }
 
-    public void LoadMenu()
+    public void LoadMenu() // brings up main menu
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Menu"); 
     }
 
-    public void QuitGame()
+    public void QuitGame() // closes application
     {
         Debug.Log("Quitting game...");
         Application.Quit();
     }
 
-    public void PlayAgain()
+    public void PlayAgain() // reloads the main game scene 
     {
         SceneManager.LoadScene("Main");
     }
-
-
 }

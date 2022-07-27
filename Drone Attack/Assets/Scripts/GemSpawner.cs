@@ -5,15 +5,10 @@ using UnityEngine;
 public class GemSpawner : MonoBehaviour
 {
     public float spawnDelay = 3f;
-
-    float nextTimeToSpawn = 0f;
-
+    public float nextTimeToSpawn = 0f;
     public GameObject gem;
-
     public GameObject gemClone;
-
     public Transform[] gemSpawnPoints;
-
 
     private void Update()
     {
@@ -35,9 +30,6 @@ public class GemSpawner : MonoBehaviour
     public void DestroyGameObject()
     {
         Destroy(gemClone, 6);
-
     }
-
-
 }
 
