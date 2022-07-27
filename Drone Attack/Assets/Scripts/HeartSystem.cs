@@ -38,7 +38,6 @@ public class HeartSystem : MonoBehaviour
     {
         if (playerDead == true)
         {
-            Scoring.CurrentScore = 0;
             player_RB2D.constraints = RigidbodyConstraints2D.FreezeAll;
             droneRB2D.constraints = RigidbodyConstraints2D.FreezeAll;
             player_Animator.SetBool("isDead", true);
