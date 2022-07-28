@@ -134,7 +134,7 @@ public class PlayerTouch : MonoBehaviour
             player_Animator.SetInteger("AnimState", 3);
             isGrounded = false;
             player_Animator.SetBool("Grounded", isGrounded);
-            player_RB2D.velocity = new Vector2(player_RB2D.velocity.x, playerJumpForce);
+            player_RB2D.velocity = new Vector2(player_RB2D.velocity.x, verticalMove * playerJumpForce);
             groundSensor.Disable(0.2f);
         }
 
