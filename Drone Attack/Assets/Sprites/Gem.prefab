@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4558530678759151126}
   - component: {fileID: 4558530678759151121}
   - component: {fileID: 4558530678759151120}
-  - component: {fileID: 4558530678759151124}
   - component: {fileID: 4558530678759151127}
+  - component: {fileID: 4558530678759151124}
   - component: {fileID: 4558530678759151125}
   m_Layer: 10
   m_Name: Gem
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4558530678759151123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.721, y: 2.361, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,6 +108,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &4558530678759151127
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4558530678759151123}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00000047683716, y: 0.077401996}
+  m_Size: {x: 0.09359455, y: 0.13558793}
+  m_Direction: 0
 --- !u!50 &4558530678759151124
 Rigidbody2D:
   serializedVersion: 4
@@ -128,23 +144,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!70 &4558530678759151127
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4558530678759151123}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.00000047683716, y: 0.077401996}
-  m_Size: {x: 0.09359455, y: 0.13558793}
-  m_Direction: 0
+  m_Constraints: 4
 --- !u!114 &4558530678759151125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,8 +157,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a9ab7ce7dbd6a448e5ed5c75bd4783, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gem_animator: {fileID: 4558530678759151120}
-  gem_rb2d: {fileID: 4558530678759151124}
+  scoreText: {fileID: 0}
+  deathMenuUI: {fileID: 0}
   gemMinSpeed: 2
   gemMaxSpeed: 4
   gemSpeed: 0
@@ -166,4 +166,5 @@ MonoBehaviour:
   gemCollider: {fileID: 4558530678759151127}
   gemRB2D: {fileID: 4558530678759151124}
   gemClone: {fileID: 0}
-  scoreText: {fileID: 0}
+  gem_animator: {fileID: 4558530678759151120}
+  gem_rb2d: {fileID: 4558530678759151124}

@@ -17,8 +17,10 @@ public class DeathMenu : MonoBehaviour
 
     void Pause() // brings up the death menu 
     {
-        deathMenuUI.SetActive(true); 
-        Time.timeScale = 0f;
+        if (deathMenuUI.activeSelf)
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     public void LoadMenu() // brings up main menu

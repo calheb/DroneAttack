@@ -38,6 +38,10 @@ public class Timer : MonoBehaviour
         {
             Time.timeScale = 0;
         }
+        else if (!deathMenuUI.activeSelf && !pauseMenu.activeSelf)
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     private void SetTimerText()

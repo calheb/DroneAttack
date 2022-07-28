@@ -20,6 +20,8 @@ public class HeartScript : MonoBehaviour
     public Rigidbody2D heartRB2D;
     public Rigidbody2D playerRB2D;
 
+    public GameObject deathMenuUI;
+
     private void Start()
     {
         heartRB2D = GetComponent<Rigidbody2D>();
@@ -30,16 +32,25 @@ public class HeartScript : MonoBehaviour
     {
         heartRB2D.MovePosition(heartRB2D.position + Vector2.down * Time.fixedDeltaTime * heartSpeed);
 
-        if (heartRB2D.position.y <= 1.95)
+        //if (heartRB2D.position.y <= 1.95)
+        //{
+        //    heartRB2D.constraints = RigidbodyConstraints2D.FreezeAll;
+        //    StartCoroutine(waiter());
+        //}
+
+        //IEnumerator waiter()
+        //{
+        //    yield return new WaitForSeconds(0.5f);
+        //    heartRB2D.constraints = RigidbodyConstraints2D.None;
+        //}
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground") && !deathMenuUI.activeSelf)
         {
             heartRB2D.constraints = RigidbodyConstraints2D.FreezeAll;
-            StartCoroutine(waiter());
-        }
-
-        IEnumerator waiter()
-        {
-            yield return new WaitForSeconds(0.5f);
-            heartRB2D.constraints = RigidbodyConstraints2D.None;
         }
     }
+
 }

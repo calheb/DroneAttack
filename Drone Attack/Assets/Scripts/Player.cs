@@ -55,36 +55,6 @@ public class Player : MonoBehaviour
         scoreText.text = "Score: " + Scoring.CurrentScore;
     }
 
-    //private void OnCollisionStay2D(Collision2D col)
-    //{
-    //    //if (col.collider.tag == "Enemy" && playerDead)
-    //    //{
-    //    //    Scoring.CurrentScore = 0;
-    //    //    player_RB2D.constraints = RigidbodyConstraints2D.FreezeAll;
-    //    //    droneRB2D.constraints = RigidbodyConstraints2D.FreezeAll;
-    //    //    player_Animator.SetBool("isDead", true);
-    //    //    player_Animator.SetInteger("AnimState", 4);
-    //    //    player_Animator.Play("player_death");
-    //    //    droneAnimator.Play("drone_death");
-    //    //    playerAudioSource.Play();
-    //    //    StartCoroutine(DeathWaiter());
-    //    //}
-    //    if (col.collider.tag == "Enemy" && !playerDead)
-    //    {
-    //        HeartSystem heartSystem = GetComponent<HeartSystem>();
-    //        heartSystem.TakeDamage(1);
-    //        player_Animator.SetBool("isDead", true);
-    //        player_Animator.SetInteger("AnimState", 4);
-    //        player_Animator.Play("player_death");
-    //        droneAnimator.Play("drone_death");
-    //        playerAudioSource.Play();
-    //        player_RB2D.transform.position = playerSpawnPoint.position;
-
-    //        player_Animator.SetInteger("AnimState", 6);
-    //        player_Animator.Play("player_respawn");
-    //    }
-    //}
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Gem") && !deathMenuUI.activeSelf)

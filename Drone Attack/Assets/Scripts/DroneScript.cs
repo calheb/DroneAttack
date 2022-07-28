@@ -13,8 +13,6 @@ public class DroneScript : MonoBehaviour
     public float maxSpeed = 10f;
     public float speed;
 
-    public AudioSource audioSource;
-
     private void Start()
     {
         m_animator = GetComponent<Animator>();

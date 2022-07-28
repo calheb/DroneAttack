@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class GemSpawner : MonoBehaviour
 {
-    public float spawnDelay = 3f;
-    public float nextTimeToSpawn = 0f;
+    public float spawnDelay = 0.75f;
+    float nextTimeToSpawn = 0f;
     public GameObject gem;
     public GameObject gemClone;
     public Transform[] gemSpawnPoints;
-
     private void Update()
     {
         if (nextTimeToSpawn <= Time.time)
@@ -27,9 +26,17 @@ public class GemSpawner : MonoBehaviour
         gemClone = Instantiate(gem, gemSpawnPoint.position, gemSpawnPoint.rotation);
     }
 
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground") && !deathMenuUI.activeSelf)
+    //    {
+    //        gem_rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+    //    }
+    //}
+
     public void DestroyGameObject()
     {
-        Destroy(gemClone, 6);
+        Destroy(gemClone, 3);
     }
 }
 
