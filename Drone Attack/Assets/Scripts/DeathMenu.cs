@@ -18,7 +18,7 @@ public class DeathMenu : MonoBehaviour
     void Pause() // brings up the death menu 
     {
         deathMenuUI.SetActive(true); 
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
     }
 
     public void LoadMenu() // brings up main menu
@@ -34,7 +34,7 @@ public class DeathMenu : MonoBehaviour
 
     public void PlayAgain() // reloads the main game scene 
     {
-        SceneManager.LoadScene("Main");
         Time.timeScale = 1f;
+        SceneManager.LoadScene("Main");
     }
 }

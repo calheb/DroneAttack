@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
     {
         timeFormats.Add(TimerFormats.Whole, "0");
         timeFormats.Add(TimerFormats.TenthDecimal, "0.0");
-        timeFormats.Add(TimerFormats.HundrethsDecimal, "00.00");
+        timeFormats.Add(TimerFormats.HundrethsDecimal, "0.00");
     }
     void Update()
     {
@@ -37,6 +37,10 @@ public class Timer : MonoBehaviour
         if (deathMenuUI.activeSelf || pauseMenu.activeSelf)
         {
             Time.timeScale = 0;
+        }
+        else if (!deathMenuUI.activeSelf && !pauseMenu.activeSelf)
+        {
+            Time.timeScale = 1;
         }
     }
 

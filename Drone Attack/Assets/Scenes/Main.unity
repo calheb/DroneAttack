@@ -3954,7 +3954,7 @@ MonoBehaviour:
   currentTime: 0
   countDown: 0
   hasFormat: 1
-  format: 2
+  format: 1
 --- !u!4 &1431290293
 Transform:
   m_ObjectHideFlags: 0
@@ -4515,7 +4515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashState: 0
   dashForce: 1000
-  dashTimer: 0
+  dashTimer: 1
   maxDash: 0
   savedVelocity: {x: 0, y: 0}
 --- !u!114 &1452176629
@@ -5254,7 +5254,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.17102718, y: 3.282484}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 1
 --- !u!212 &1761658491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5315,7 +5315,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761658489}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.57, y: -0.09, z: 0}
+  m_LocalPosition: {x: 1.62, y: -0.09, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5614,7 +5614,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.124911785, y: 3.253364}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 1
 --- !u!212 &1838402964
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5675,7 +5675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838402962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.16, y: 0.08, z: 0}
+  m_LocalPosition: {x: -7.12, y: 0.08, z: 0}
   m_LocalScale: {x: 10, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
