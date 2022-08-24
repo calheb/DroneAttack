@@ -27,10 +27,10 @@
 </div>
   
 <div class='container' align='center'>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop2.PNG" width="200" height="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop1.PNG" width="200" height="100"><br><br>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop3.PNG" width="200" height="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop4.PNG" width="200" height="100"><br><br>
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop2.PNG" width="300" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop1.PNG" width="300" height="150"><br><br>
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop3.PNG" width="300" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop4.PNG" width="300" height="150"><br><br>
 </div>
 
 
