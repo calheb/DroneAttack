@@ -1,6 +1,6 @@
-<div align='center'>
-# align='center' DroneAttack
-</div>
+<h1 align='center'>
+align='center' DroneAttack
+</h1>
 
 2D Cyberpunk obstacle dodging game
 
