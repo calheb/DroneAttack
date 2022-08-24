@@ -57,9 +57,9 @@ Drone Attack
   
   <div align='center'>
    --- Controls ---<br>
-    Movement: WASD/Arrow Keys/Touch & drag on mobile
-    Teleport: L-Shift/Tap button on mobile
-    Jump: Space/tap screen on mobile
+    Movement: WASD/Arrow Keys/Touch & drag on mobile<br>
+    Teleport: L-Shift/Tap button on mobile<br>
+    Jump: Space/tap screen on mobile<br>
   </div>
 
 
