@@ -2,10 +2,10 @@
 Drone Attack
 </h1>
 
-<h2 align='center'>
+<h3 align='center'>
 2D Cyberpunk obstacle dodging game created with C# in the Unity Engine.
 
-<h2>
+<h3>
 
 <div class='container'align='center'>
 <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DAScreenshot1.png" width="400" height="200">
