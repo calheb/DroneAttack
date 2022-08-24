@@ -1,5 +1,5 @@
 <h1 align='center'>
-align='center' DroneAttack
+DroneAttack
 </h1>
 
 2D Cyberpunk obstacle dodging game
