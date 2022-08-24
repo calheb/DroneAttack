@@ -71,7 +71,7 @@
 ## How To Use
 
 - Clone the project and build it in Unity 2021 or newer.
-- Released versions for Windows & Android available for download (as well as a playable browser version): https://ctrl-alt-caleb.itch.io/drone-attack
+- Released versions for Windows/Android/Web : https://ctrl-alt-caleb.itch.io/drone-attack
 ---
 
   ## Author Info
