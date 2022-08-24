@@ -81,7 +81,7 @@
 - Released versions for Windows/Android/Web : https://ctrl-alt-caleb.itch.io/drone-attack
 
 
-  ## Author Info
+## Author Info
 
 - [LinkedIn](https://linkedin.com/in/calebhebert)
 - [Website](https://calebhebert.com)<br>
