@@ -1,4 +1,4 @@
-#DroneAttack
+# Drone Attack
 
 <h3 align='center'>
   2D Cyberpunk obstacle dodging game created with C# in the Unity Engine.
@@ -75,6 +75,6 @@
 - [LinkedIn](https://linkedin.com/in/calebhebert)
 - [Website](https://calebhebert.com)
 
-[Back To The Top](#DroneAttack)
+[Back To The Top](#Drone Attack)
 
 
