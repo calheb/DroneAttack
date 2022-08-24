@@ -70,8 +70,8 @@
   <div align='center'>
     <h3>Controls</h3>
     Movement: WASD/Arrow Keys/Touch & drag on mobile<br>
-    Teleport: L-Shift/Tap button on mobile<br>
-    Jump: Space/tap screen on mobile<br>
+    Teleport: L-Shift/Tap on mobile<br>
+    Jump: Space/touch & drag up on mobile<br>
   </div>
   
   
