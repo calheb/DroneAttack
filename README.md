@@ -56,10 +56,10 @@ Drone Attack
   To put it simply, the goal is to collect gems and hearts while avoiding drones!
   
   <div align='center'>
-   --- Controls ---<br>
-    Movement: WASD/Arrow Keys/Touch & drag on mobile<br>
-    Teleport: L-Shift/Tap button on mobile<br>
-    Jump: Space/tap screen on mobile<br>---------------------
+   --- _Controls_ ---<br>
+    _Movement_: WASD/Arrow Keys/Touch & drag on mobile<br>
+    _Teleport_: L-Shift/Tap button on mobile<br>
+    _Jump_: Space/tap screen on mobile<br>---------------------
   </div>
 
 
