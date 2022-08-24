@@ -68,7 +68,7 @@
 ---
   
   <div align='center'>
-    <h2>Controls</h2><br>
+    <h3>Controls</h3><br>
     Movement: WASD/Arrow Keys/Touch & drag on mobile<br>
     Teleport: L-Shift/Tap button on mobile<br>
     Jump: Space/tap screen on mobile<br>
