@@ -27,10 +27,10 @@
 </div>
   
 <div class='container' align='center'>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop2.PNG" width="300" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop1.PNG" width="300" height="150"><br><br>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop3.PNG" width="300" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop4.PNG" width="300" height="150"><br><br>
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop2.PNG" width="300" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop1.PNG" width="300" height="150"><br><br>
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop3.PNG" width="300" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop4.PNG" width="300" height="150"><br><br>
 </div>
 
 
@@ -40,12 +40,12 @@
  </h2>
 
 <div class='container'align='center'>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DAScreenshot1.png" width="400" height="200">
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DAScreenshot2.png" width="400" height="200">
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DAScreenshot1.png" width="400" height="200">
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DAScreenshot2.png" width="400" height="200">
 </div>
 
 <div class='container'align='center'>
-  <br><img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DroneAttackAndroid.gif" width="350" height="175"><br>
+  <br><img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DroneAttackAndroid.gif" width="350" height="175"><br>
 </div>
   
 
