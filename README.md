@@ -36,7 +36,7 @@ Drone Attack
 </div>
 
 <div class='container'align='center'>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DroneAttackAndroid.gif" width="350" height="175">
+  <br><img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DroneAttackAndroid.gif" width="350" height="175">
 </div>
   
   
