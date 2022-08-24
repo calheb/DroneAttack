@@ -67,7 +67,6 @@
     Jump: Space/tap screen on mobile<br>
   </div>
   
-  ---
   
 ## How To Use
 
