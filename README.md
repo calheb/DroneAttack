@@ -8,7 +8,7 @@ Drone Attack
 
 
   <h2>
-  Screen Shots
+  Screen Shots - Desktop
   </h2>
 
 
@@ -24,6 +24,10 @@ Drone Attack
 </div>
 
 
+  
+ <h2>
+  Screen Shots - Android
+ </h2>
 
 <div class='container'align='center'>
   <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DAScreenshot1.png" width="400" height="200">
