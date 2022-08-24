@@ -23,7 +23,7 @@
 
 
 <div class='container'align='center'>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/images/DA_Desktop.gif" width="600" height="300"><br><br>
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop.gif" width="600" height="300"><br><br>
 </div>
   
 <div class='container' align='center'>
