@@ -10,6 +10,7 @@ Drone Attack
 
 <div class='container'align='center'>
 <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop.gif" width="600" height="300">
+  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/DA_Desktop1.png" width="600" height="300">
 </div>
 
 
