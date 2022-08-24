@@ -1,5 +1,5 @@
 <h1 align='center'>
-Drone Attack
+#Drone Attack
 </h1>
 
 <h3 align='center'>
@@ -65,6 +65,18 @@ Drone Attack
   </div>
   
   ---
+  
+## How To Use
 
+- Clone the project and build it in Unity 2021 or newer.
+- Released versions for Windows & Android available for download (as well as a playable browser version): https://ctrl-alt-caleb.itch.io/drone-attack
+---
+
+  ## Author Info
+
+- LinkedIn - [LinkedIn](https://linkedin.com/in/calebhebert)
+- Website - [Caleb Hebert](https://calebhebert.com)
+
+[Back To The Top](#Drone Attack)
 
 
