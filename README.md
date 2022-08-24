@@ -1,14 +1,20 @@
-# DroneAttack
+# Drone Attack
 
 <h3 align='left'>
   2D Cyberpunk obstacle dodging game created with C# in the Unity Engine.
   <br><h4 align='left'>Drone Attack is available to play on Windows, Android, and Web browsers.<h4>
 <h3>
 
+  ### Table of Contents
 
-  <h2>
-  Screen Shots - Desktop
-  </h2>
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Author Info](#author-info)
+- [Screen Shots](#screen-shots---desktop)
+
+
+ ## Screen Shots - Desktop
+
 
 
 <div class='container'align='center'>
@@ -75,6 +81,6 @@
 - [LinkedIn](https://linkedin.com/in/calebhebert)
 - [Website](https://calebhebert.com)
 
-[Back To The Top](#DroneAttack)
+[Back To The Top](#Drone-Attack)
 
 
