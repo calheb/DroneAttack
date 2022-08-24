@@ -11,8 +11,11 @@
 
 - [Description](#description)
 - [How To Use](#how-to-use)
+- [Screen Shots - Desktop](#screen-shots---desktop)
+- [Screen Shots - Android](#screen-shots---android)
 - [Author Info](#author-info)
-- [Screen Shots](#screen-shots---desktop)
+  
+
 ---
 
  ## Screen Shots - Desktop
