@@ -50,7 +50,7 @@ Drone Attack
   
   <div align='center'>
       To put it simply, the goal is to collect gems and hearts while avoiding drones!
-  </div
+  </div>
   - A simple 2D obstacle dodging game
   - 'Drones' will spawn at a random interval from the top of the screen and will take 1 'life' from the player if hit.
   - Drone spawn rate will increase as the round is played
