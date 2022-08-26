@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class DroneScript : MonoBehaviour
 {
-    public Animator m_animator;
-    public Rigidbody2D m_body2d;
+    public Animator drone_animator;
+    public Rigidbody2D drone_rb2d;
 
     public float minSpeed = 5f;
     public float maxSpeed = 10f;
@@ -17,17 +17,17 @@ public class DroneScript : MonoBehaviour
 
     private void Start()
     {
-        m_animator = GetComponent<Animator>();
-        m_body2d = GetComponent<Rigidbody2D>();
+        drone_animator = GetComponent<Animator>();
+        drone_rb2d = GetComponent<Rigidbody2D>();
         speed = Random.Range(minSpeed, maxSpeed);
     }
     void FixedUpdate()
     {
-        m_body2d.MovePosition(m_body2d.position + Vector2.down * Time.fixedDeltaTime * speed);
+        drone_rb2d.MovePosition(drone_rb2d.position + Vector2.down * Time.fixedDeltaTime * speed);
 
-        if (m_body2d.position.y <= 1.95)
+        if (drone_rb2d.position.y <= 1.95)
         {
-            m_body2d.constraints = RigidbodyConstraints2D.FreezeAll;
+            drone_rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
             StartCoroutine(waiter());
         }
 
@@ -36,7 +36,7 @@ public class DroneScript : MonoBehaviour
         {
             yield return new WaitForSeconds(0.50f);
             GetComponent<Collider2D>().enabled = false; //disable hit box
-            m_animator.Play("drone_death");
+            drone_animator.Play("drone_death");
         }
     }
 }

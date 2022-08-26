@@ -45,7 +45,6 @@ public class Player : MonoBehaviour
 
     #endregion
 
-    // Use this for initialization
     void Start()
     {
         player_Animator = GetComponent<Animator>();

@@ -157,9 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b21364c5f1d18469ef9d2c84fac3dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_animator: {fileID: 8821227440667863010}
-  m_body2d: {fileID: 8821227440667863008}
-  minSpeed: 3
-  maxSpeed: 6
+  drone_animator: {fileID: 8821227440667863010}
+  drone_rb2d: {fileID: 8821227440667863008}
+  minSpeed: 2
+  maxSpeed: 4
   speed: 0
   audioSource: {fileID: 0}

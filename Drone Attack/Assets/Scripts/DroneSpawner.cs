@@ -50,7 +50,5 @@ public class DroneSpawner : MonoBehaviour
         Destroy(clone, 3);
 
     }
-
-
 }
 
