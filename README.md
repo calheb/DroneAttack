@@ -13,7 +13,6 @@
 - [How To Use](#how-to-use)
 - [Screen Shots - Desktop](#screen-shots---desktop)
 - [Screen Shots - Android](#screen-shots---android)
-- [Author Info](#author-info)
   
 
 ---
@@ -79,13 +78,6 @@
 
 - Clone the project and build it in Unity 2021 or newer.
 - Released versions for Windows/Android/Web : https://ctrl-alt-caleb.itch.io/drone-attack
-
-
-## Author Info
-
-- [LinkedIn](https://linkedin.com/in/calebhebert)
-- [Website](https://calebhebert.com)<br>
-
 
 [Back To The Top](#Drone-Attack)
 
