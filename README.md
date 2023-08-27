@@ -58,13 +58,6 @@
   - 'Gems' will spawn at a random interval from the top of the screen and will add +1 point to the score
   - 'Hearts' will spawn at a random interval from the top of the screen and will add +1 heart to the total hearts, max 8 (has not been an issue)
   ---
-### What I Learned:
-- How to develop class relationships in object-oriented projects
-- Chaining animations together 
-- Implementing unit tests 
-- Multi-platform & development
-- Integrating Git for version control
----
   
   <div align='center'>
     <h3>Controls</h3>
