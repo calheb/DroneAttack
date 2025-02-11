@@ -1,8 +1,8 @@
 # Drone Attack
 
 <h3 align='left'>
-  2D Cyberpunk obstacle dodging game created with C# in the Unity Engine.
-  <br><h4 align='left'>Drone Attack is available to play on Windows, Android, and Web browsers.<h4>
+  A 2D Cyberpunk obstacle dodging game.
+  <br><h4 align='left'>Available to play on Windows, Android, and the Web.<h4>
 <h3>
   
 ###
@@ -10,33 +10,19 @@
   ### Table of Contents
 
 - [Description](#description)
-- [How To Use](#how-to-use)
-- [Screen Shots - Desktop](#screen-shots---desktop)
-- [Screen Shots - Android](#screen-shots---android)
+- [Screenshots](#screenshots)
+- [Building From Source](#building-from-source)
   
 
 ---
 
- ## Screen Shots - Desktop
+ ## Screenshots
 
 
 
 <div class='container'align='center'>
   <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop.gif" width="600" height="300"><br><br>
 </div>
-  
-<div class='container' align='center'>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop2.PNG" width="300" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop1.PNG" width="300" height="150"><br><br>
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop3.PNG" width="300" height="150">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DA_Desktop4.PNG" width="300" height="150"><br><br>
-</div>
-
-
-  
- <h2>
-  Screen Shots - Android
- </h2>
 
 <div class='container'align='center'>
   <img src="https://github.com/ctrl-alt-caleb/DroneAttack/blob/master/Images/DAScreenshot1.png" width="400" height="200">
@@ -50,13 +36,12 @@
 
 ## Description
   
-  To put it simply, the goal is to collect gems and hearts while avoiding drones!<br>
+  To put it simply, the goal is to collect gems while avoiding drones!<br>
   
-  - A simple 2D obstacle dodging game
-  - 'Drones' will spawn at a random interval from the top of the screen and will take 1 'life' from the player if hit.
-  - Drone spawn rate will increase as the round is played
-  - 'Gems' will spawn at a random interval from the top of the screen and will add +1 point to the score
-  - 'Hearts' will spawn at a random interval from the top of the screen and will add +1 heart to the total hearts, max 8 (has not been an issue)
+  - Drones will spawn at random intervals from the top of the screen and will take 1 heart from the player when hit.
+  - Drone spawn rate will increase as the round is played.
+  - Gems will spawn at random intervals from the top of the screen and will add 1 point to the score.
+  - Hearts will spawn at random intervals from the top of the screen and will add 1 heart to the total hearts, max 8 (has not been an issue).
   ---
   
   <div align='center'>
@@ -67,12 +52,7 @@
   </div>
   
   
-## How To Use
+## Building From Source
 
 - Clone the project and build it in Unity 2021 or newer.
-- Released versions for Windows/Android/Web : https://ctrl-alt-caleb.itch.io/drone-attack
-
-[Back To The Top](#Drone-Attack)
-
-
-
+- Released versions for Windows/Android/Web : https://calheb.itch.io/drone-attack
